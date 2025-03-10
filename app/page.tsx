@@ -52,12 +52,14 @@ export default function Home() {
         <p className="text-gray-500 text-2xl">I have commercial experience in building a React application that is currently being used by a company. This project allowed me to enhance my skills in real-world conditions and understand the importance of maintaining and optimizing software products in a business environment.</p>
         <p className="text-gray-500 text-2xl">Recently, I have also started exploring Node.js (basic knowledge) for backend development, and I am currently working with Next.js to build fast, SEO-friendly, and scalable web applications. My goal is to continue growing my skills in both frontend and backend development, creating seamless and high-quality user experiences.</p>
       </section>
-      <section id="contacts" className="flex flex-col gap-10 mt-15 mb-15 p-20 items-center shadow-2xl shadow-violet-500">
+      <section id="contacts" className="flex flex-col gap-5 mt-15 mb-15 p-20 items-center shadow-2xl shadow-violet-500">
+        <h2 className="text-gray-500 text-4xl">Send a Message</h2>
         <div className="flex gap-10 p-20">
           <a  style={{ backgroundImage: "url('/telegram.png')" }} className="bg-cover w-[50px] h-[50px]" href=""></a>
           <a style={{ backgroundImage: "url('/linkedin.png')" }} className="bg-cover w-[50px] h-[50px]" href=""></a>
           <a style={{ backgroundImage: "url('/github.png')" }} className="bg-cover w-[50px] h-[50px]" href=""></a>
         </div>
+        <p className="text-gray-500 text-2xl">Let’s bring your web app or landing page to life! Get in touch with me today!</p>
         <form className="flex flex-col gap-5 w-[50%] p-10" action="#">
           <input className="outline-none p-3 rounded-2xl border-2 border-gray-500 focus:border-violet-500" type="text" placeholder="Name" />
           <input className="outline-none p-3 rounded-2xl border-2 border-gray-500 focus:border-violet-500" type="email" placeholder="Email" />
