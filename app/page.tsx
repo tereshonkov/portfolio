@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import Image from "next/image";
 
 export default function Home() {
@@ -52,6 +53,13 @@ export default function Home() {
         <p className="text-gray-500 text-2xl">I have commercial experience in building a React application that is currently being used by a company. This project allowed me to enhance my skills in real-world conditions and understand the importance of maintaining and optimizing software products in a business environment.</p>
         <p className="text-gray-500 text-2xl">Recently, I have also started exploring Node.js (basic knowledge) for backend development, and I am currently working with Next.js to build fast, SEO-friendly, and scalable web applications. My goal is to continue growing my skills in both frontend and backend development, creating seamless and high-quality user experiences.</p>
       </section>
+      <section className="flex justify-center items-center gap-30">
+        <div style={{backgroundImage: "url('/html.png')"}} className="bg-cover w-[60px] h-[60px] object-fill"></div>
+        <div style={{backgroundImage: "url('/css.png')"}} className="bg-cover w-[60px] h-[60px] object-fill"></div>
+        <div style={{backgroundImage: "url('/javascript.png')"}} className="bg-cover w-[60px] h-[60px] object-fill"></div>
+        <div style={{backgroundImage: "url('/react.png')"}} className="bg-cover w-[60px] h-[60px] object-fill"></div>
+        <div style={{backgroundImage: "url('/nextjs.png')"}} className="bg-cover w-[60px] h-[60px] object-fill"></div>
+      </section>
       <section id="contacts" className="flex flex-col gap-5 mt-15 mb-15 p-20 items-center shadow-2xl shadow-violet-500">
         <h2 className="text-gray-500 text-4xl">Send a Message</h2>
         <div className="flex gap-10 p-20">
@@ -67,6 +75,9 @@ export default function Home() {
           <button className="p-2 rounded-2xl bg-violet-500 text-white w-[150px] hover:shadow-xl hover:bg-violet-400 cursor-pointer self-center">Send</button>
         </form>
       </section>
+      <footer className="flex items-center justify-center p-10">
+        <p className="text-gray-500 text-2xl">© 2025 Dmitro. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
