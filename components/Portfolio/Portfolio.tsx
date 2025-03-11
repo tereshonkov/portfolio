@@ -3,11 +3,18 @@
 import { useState } from "react";
 import Btn from "../Btn/Btn";
 import Modal from "../Modal/Modal";
-import Image from "next/image";
+// import Image from "next/image";
 
-const arrayItems = [
+interface Arr {
+  title: string;
+  description: string;
+  image: string;
+  id: number;
+}
+
+const arrayItems : Arr[] = [
   {
-    title: "Decstop version HTML/CSS",
+    title: "Dekstop version HTML/CSS",
     description: "This is a pet project for desktop versions, written in basic HTML5 and CSS. The project does not include responsiveness or JavaScript—it is presented as an understanding of the fundamentals of page layout.",
     image: "/portfolio1.png",
     id: 1,
