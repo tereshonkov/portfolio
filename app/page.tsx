@@ -12,10 +12,10 @@ export default function Home() {
     <div className="container mx-auto max-w-screen-2xl">
       <Header/>
       <Hero/>
-      <Portfolio/>
+      <Portfolio/> //User can see the projects and functionality
       <About/>
       <Stack />
-      <Contact />
+      <Contact /> //User can send a message
       <Footer />
     </div>
   );
