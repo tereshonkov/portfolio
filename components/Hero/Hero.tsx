@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Btn from "../Btn/Btn"
 
 export default function Hero() {
   return (
@@ -7,8 +8,8 @@ export default function Hero() {
       <h1 className="text-gray-500 text-4xl">Crafting Modern & Responsive Web Experiences</h1>
       <p className="text-gray-500 text-2xl">I'm a Frontend Developer specializing in building fast, interactive, and user-friendly web applications with JavaScript, React, Next.js, and modern UI frameworks.</p>
       <div className="flex gap-10">
-        <a href="#portfolio" className="flex justify-center items-center p-2 rounded-2xl bg-violet-500 text-white w-[150px] hover:shadow-xl hover:bg-violet-400 cursor-pointer">View Portfolio</a>
-        <a href="#contacts" className="flex justify-center items-center p-2 rounded-2xl bg-violet-500 text-white w-[150px] hover:shadow-xl hover:bg-violet-400 cursor-pointer">Hire Me</a>
+        <Btn text="View Portfolio" link="#portfolio"/>
+        <Btn text="Hire Me" link="#contacts"/>
       </div>
     </div>
     <div className="w-[50vw] shadow-2xl">
