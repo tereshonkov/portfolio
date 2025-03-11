@@ -1,6 +1,5 @@
 // Code: Button component
 "use client";
-import { useState } from "react";
 
 interface BtnProps {
   text: string;

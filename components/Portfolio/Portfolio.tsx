@@ -43,11 +43,11 @@ const arrayItems : Arr[] = [
 export default function Portfolio() {
   const [showModal, setShowModal] = useState<boolean>(false);
   const [idEl, setIdEL] = useState<number>(0);
-  const openModal = (id: number) => {
+  const openModal = (id: number): void => {
     setShowModal(true);
     setIdEL(id); 
   }
-  const closeModal = () => {
+  const closeModal = (): void => {
     setShowModal(false);  
   }
   return (
