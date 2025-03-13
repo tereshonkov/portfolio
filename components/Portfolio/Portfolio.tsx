@@ -26,7 +26,7 @@ const arrayItems : Arr[] = [
     id: 2,
   },
   {
-    title: "Vanilla JavaScript project decstop-version",
+    title: "JavaScript project decstop-version",
     description: "A sleek desktop pet project built with pure vanilla JavaScript, featuring dynamic card filtering and content updates. The project offers an intuitive, smooth user experience with real-time content changes",
     image: "/portfolio3.png",
     id: 3,
@@ -51,11 +51,11 @@ export default function Portfolio() {
     setShowModal(false);  
   }
   return (
-    <section id="portfolio" className="flex flex-col gap-10 mt-15 mb-15 p-20">
-    <div className="flex gap-8 flex-wrap justify-center">
+    <section id="portfolio" className="flex flex-col gap-1 mt-10 mb-2">
+    <div className="flex gap-4 flex-wrap justify-center">
       {arrayItems.map((el) => (
-              <div key={el.id} className="w-[40%] h-[600px] shadow-2xl shadow-violet-500/50 flex flex-col justify-around items-center ">
-                <h2 className="text-gray-500 text-2xl">{el.title}</h2>
+              <div key={el.id} className="w-[70%] h-[300px] shadow-2xl shadow-violet-500/50 flex flex-col justify-around items-center sm:h-[400px] sm:w-[60%] md:w-[40%] lg:h-[500px]">
+                <h2 className="text-gray-500 text-l text-center md:xl lg:text-2xl xl:text-3xl">{el.title}</h2>
               {/* <Image src={el.image} width={500} height={500} alt={el.title}/> */}
               <Btn text="See Details" onCLick={() => {openModal(el.id)}}/>
               </div>
