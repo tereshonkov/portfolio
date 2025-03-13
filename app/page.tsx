@@ -10,7 +10,7 @@ import Footer from "@/components/Footer/Footer";
 export default function Home() {
   return (
     <div className="container mx-auto max-w-screen-2xl">
-      <Header/>
+      <Header/>       
       <Hero/>
       <Portfolio/> 
       <About/>
