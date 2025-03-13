@@ -21,7 +21,7 @@ export default function Contact() {
   // console.log(arr);
   
   return (
-    <section id="contacts" className="h-[100vh] flex flex-col gap-5 mb-15 p-2 items-center shadow-2xl shadow-violet-500">
+    <section id="contacts" className="h-[100vh] flex flex-col gap-5 p-2 items-center justify-center shadow-2xl shadow-violet-500">
     <h2 className="text-gray-500 text-3xl md:text-4xl">Send a Message</h2>
     <div className="flex gap-10 p-5">
       <a  style={{ backgroundImage: "url('/telegram.png')" }} className="bg-cover w-[50px] h-[50px]" target="_blank" href="https://t.me/dmitro90"></a>
