@@ -29,7 +29,6 @@ export default function FormComment() {
     };
     return (
         <form onSubmit={(e) => { handleSubmit(e) }} className="w-1/3 mx-auto mt-10 flex flex-col justify-center items-center gap-4">
-            <h1 className="text-gray-500 text-4xl">Comment</h1>
             <input
                 className="w-full h-[30px] text-center border-2 border-gray-300 rounded-md outline-none focus:border focus:border-solid focus:border-violet-500"
                 type="text"
