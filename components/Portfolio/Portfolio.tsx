@@ -46,7 +46,7 @@ const initial = {
     x: 0,
     transition : {
       delay: i * 0.3,
-      duration: 1.5,
+      duration: 1,
       ease: "easeInOut"
     }
 }),

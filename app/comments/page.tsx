@@ -21,7 +21,7 @@ export default function Blog() {
   }, [comments]);
   return (
     <div className="p-10 flex flex-col items-center gap-6">
-            <Link href="/" className="absolute right-8 top-5 text-gray-500 p-2 rounded-2xl cursor-pointer border hover:bg-violet-500 hover:text-amber-50">Home</Link>
+            <Link href="/" className="absolute right-8 top-5 text-gray-500 p-2 rounded-2xl cursor-pointer border hover:bg-violet-500 hover:text-amber-50 lg: text-2xl text-center w-[10%]">Back</Link>
       <h1 className="text-gray-500 text-4xl text-center mt-5">Comments</h1>
       {comments.map((comment) => (
         <div key={comment.id} className="w-[40vw] flex items-center gap-3 p-2 border border-gray-500 border-solid rounded-2xl">
