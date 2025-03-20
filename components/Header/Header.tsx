@@ -1,13 +1,17 @@
 // Code: Header component
 "use client";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
   const handleMobile = (): void => setIsMobile(!isMobile);
   return (
     <header className="p-6 flex items-center justify-between">
-    <p className="font-[--font-trade-winds]  text-gray-500 text-l cursor-pointer hover:text-violet-500 md:text-2xl">DMITRO<span className="text-violet-500 hidden md:inline-block md:text-2xl"> - Web development</span></p>
+    <motion.p 
+    animate={{ scale: [0.5, 1] }}
+    transition={{ duration: 1 }}
+    className="font-[--font-trade-winds]  text-gray-500 text-l cursor-pointer hover:text-violet-500 md:text-2xl">DMYTRO</motion.p>
     <div onClick={handleMobile} className="flex flex-col gap-1 w-[30px] cursor-pointer md:hidden">
       <span className="bg-violet-500 h-[1px] w-full"></span>
       <span className="bg-violet-500 h-[1px] w-full"></span>

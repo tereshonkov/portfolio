@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Btn from "../Btn/Btn";
 import Modal from "../Modal/Modal";
+import { motion } from "framer-motion";
 // import Image from "next/image";
 
 interface Arr {
@@ -39,6 +40,19 @@ const arrayItems : Arr[] = [
   },
 ];
 
+const initial = {
+  visible: (i:number) => ({
+    opacity: 1,
+    x: 0,
+    transition : {
+      delay: i * 0.3,
+      duration: 1.5,
+      ease: "easeInOut"
+    }
+}),
+hidden: { opacity: 0, x: 100 },
+};
+
 
 export default function Portfolio() {
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -51,14 +65,19 @@ export default function Portfolio() {
     setShowModal(false);  
   }
   return (
-    <section id="portfolio" className="flex flex-col gap-1 mt-10 mb-2">
+    <section id="portfolio" className="flex flex-col gap-1 mt-10 mb-2 p-[5%]">
     <div className="flex gap-4 flex-wrap justify-center">
-      {arrayItems.map((el) => (
-              <div key={el.id} className="w-[70%] h-[300px] shadow-2xl shadow-violet-500/50 flex flex-col justify-around items-center sm:h-[400px] sm:w-[60%] md:w-[40%] lg:h-[500px]">
+      {arrayItems.map((el, i) => (
+              <motion.div 
+              variants={initial}
+              initial="hidden"
+              whileInView="visible"
+              custom={i}
+              key={el.id} className="w-[70%] h-[300px] shadow-2xl shadow-violet-500/50 flex flex-col justify-around items-center sm:h-[400px] sm:w-[60%] md:w-[40%] lg:h-[500px]">
                 <h2 className="text-gray-500 text-l text-center md:xl lg:text-2xl xl:text-3xl">{el.title}</h2>
               {/* <Image src={el.image} width={500} height={500} alt={el.title}/> */}
               <Btn text="See Details" onCLick={() => {openModal(el.id)}}/>
-              </div>
+              </motion.div>
       ))}
       {showModal && <Modal array={arrayItems} id={idEl} closeModal={closeModal}/>}
       </div>
