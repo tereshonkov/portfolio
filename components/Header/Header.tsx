@@ -33,7 +33,6 @@ export default function Header() {
       <a onClick={handleMobile} href="#portfolio" className="relative text-amber-50 p-2 rounded-2xl cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:scale-0 after:bg-violet-500 after:transition-transform hover:after:scale-100 after:duration-300">Portfolio</a>
       <a onClick={handleMobile} href="#about" className="relative text-amber-50 p-2 rounded-2xl cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:scale-0 after:bg-violet-500 after:transition-transform hover:after:scale-100 after:duration-300">About Me</a>
       <a onClick={handleMobile} href="#contacts" className="relative text-amber-50 p-2 rounded-2xl cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:scale-0 after:bg-violet-500 after:transition-transform hover:after:scale-100 after:duration-300">Contacts</a>
-      <a onClick={handleMobile} href="#comments" className="relative text-amber-50 p-2 rounded-2xl cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:scale-0 after:bg-violet-500 after:transition-transform hover:after:scale-100 after:duration-300">Comments</a>
     </ul>
       </div>}
   </header>
