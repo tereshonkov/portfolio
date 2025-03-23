@@ -24,7 +24,7 @@ export default function Header() {
       <a href="#contacts" className="relative text-gray-500 p-2 rounded-2xl cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-full after:scale-0 after:bg-violet-500 after:transition-transform hover:after:scale-100 after:duration-300">Contacts</a>
     </ul>
     {isMobile && <div className="bg-violet-500 w-screen h-screen fixed top-0 left-0">
-      <div onClick={handleMobile} className="flex w-[30px] relative top-5 left-[90vw] cursor-pointer">
+      <div onClick={handleMobile} className="flex w-[30px] h-[30px] relative top-5 left-[90vw] cursor-pointer">
         <span className="bg-amber-50 h-[1px] w-full absolute left-0 top-0 rotate-45"></span>
         <span className="bg-amber-50 h-[1px] w-full absolute left-0 top-0 rotate-135"></span>
       </div>
