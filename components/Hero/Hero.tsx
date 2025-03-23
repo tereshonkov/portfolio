@@ -10,7 +10,7 @@ const textAnimation = {
 
 export default function Hero() {
   return (
-    <section id="hero" className="flex flex-col-reverse sm:flex-row lg:h-[80vh] md:p-2 lg:p-4 2xl:w-full 2xl:h-[90vh]">
+    <section id="hero" className="flex items-center justify-center flex-col-reverse sm:flex-row lg:h-[80vh] md:p-2 lg:p-4 2xl:w-full 2xl:h-[90vh]">
     <motion.div 
     animate={{ x: 0, opacity: 1 }}
     initial={{ x: -100, opacity: 0 }}
@@ -37,12 +37,14 @@ export default function Hero() {
     animate={{ x: 0, opacity: 1 }}
     initial={{ x: 100, opacity: 0 }}
     transition={{ duration: 1 }}
-    className="w-full shadow-2xl sm:w-1/2 md:w-1/2">
-      <Image src="/hero.jpg"
+    className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5"
+    >
+      <Image src="/selfi.jpg"
+      className="rounded-2xl"
         alt="Web Developer"
         width={500}  
-        height={300} 
-        style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        height={500} 
+        style={{ width: "100%", height: "80%", objectFit: "fill" }} />
     </motion.div>
   </section>
   )
