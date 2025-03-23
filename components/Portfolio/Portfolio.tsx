@@ -84,7 +84,7 @@ export default function Portfolio() {
               key={el.id} className="w-[70%] h-[300px] shadow-2xl rounded-2xl shadow-violet-500/50 flex flex-col justify-around items-center sm:h-[400px] sm:w-[60%] md:w-[40%] lg:h-[500px]">
                 <h2 className="text-gray-500 text-l text-center md:xl lg:text-2xl xl:text-3xl">{el.title}</h2>
               <Image src={el?.image} width={500} height={500} alt={el.title} style={{objectFit:"fill", width:"100%", height:"60%"}}/>
-              <Btn text="See Details" onCLick={() => {openModal(el.id)}}/>
+              <Btn text="See Details" onClick={() => {openModal(el.id)}}/>
               </motion.div>
       ))}
       {showModal && <Modal array={arrayItems} id={idEl} closeModal={closeModal}/>}

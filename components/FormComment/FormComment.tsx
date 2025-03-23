@@ -2,8 +2,14 @@
 import { useState } from "react";
 import Btn from "../Btn/Btn";
 
+interface Comment {
+    title: string;
+    content: string;
+    id: number;
+}
+
 export default function FormComment() {
-    const [body, setBody] = useState({
+    const [body, setBody] = useState<Comment>({
         title: "",
         content: "",
         id: 2,

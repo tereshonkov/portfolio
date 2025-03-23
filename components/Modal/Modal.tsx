@@ -24,7 +24,7 @@ export default function Modal({ id, closeModal, array }: ModalProps) {
                 <div className="border border-solid border-black md:w-[80vw] md:h-[80vh] fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white shadow-2xl flex justify-around items-center">
                     <div className="flex g-1">
                         <Image src={el.image} width={300} height={300} alt="decstop"/>
-                        {el.imageTwo && <Image src={el?.imageTwo} width={100} height={100} alt="mobile"/>}
+                        {el.imageTwo && <Image src={el.imageTwo} width={100} height={100} alt="mobile"/>}
                     </div>
                     <div className="flex flex-col gap-5 md:w-[50%] h-[90vh] justify-end md:justify-center p-2">
                         <button onClick={closeModal} className="absolute top-5 right-5 text-3xl text-gray-500 cursor-pointer">X</button>
