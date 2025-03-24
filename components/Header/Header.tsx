@@ -11,7 +11,7 @@ export default function Header() {
     <motion.p 
     animate={{ scale: [0.5, 1] }}
     transition={{ duration: 1 }}
-    className="font-[--font-trade-winds]  text-gray-500 text-l cursor-pointer hover:text-violet-500 md:text-2xl">DMYTRO</motion.p>
+    className="font-[--font-trade-winds]  text-gray-500 text-l cursor-pointer hover:text-violet-500 md:text-2xl">Front-End Developer</motion.p>
     <div onClick={handleMobile} className="flex flex-col gap-1 w-[30px] cursor-pointer md:hidden">
       <span className="bg-violet-500 h-[1px] w-full"></span>
       <span className="bg-violet-500 h-[1px] w-full"></span>

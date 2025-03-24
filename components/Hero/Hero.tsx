@@ -10,7 +10,7 @@ const textAnimation = {
 
 export default function Hero() {
   return (
-    <section id="hero" className="flex items-center justify-center flex-col-reverse sm:flex-row lg:h-[80vh] md:p-2 lg:p-4 2xl:w-full 2xl:h-[90vh]">
+    <section id="hero" className="bg-[url('/bg-hero.png')] bg-cover flex items-center justify-center flex-col-reverse sm:flex-row lg:h-[80vh] md:p-2 lg:p-4 2xl:w-full 2xl:h-[90vh]">
     <motion.div 
     animate={{ x: 0, opacity: 1 }}
     initial={{ x: -100, opacity: 0 }}
