@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Header2() {
   return (
@@ -19,17 +21,32 @@ export default function Header2() {
       <div className="flex flex-col-reverse sm:flex-row sm:justify-around sm:items-center p-10 grow-1">
         <div
           className="flex flex-col gap-[30px] sm:w-[360px] lg:w-[460px]">
-          <h1
-            className="text-2xl text-center sm:text-left md:text-3xl lg:text-6xl">Personalized web solutions for your business</h1>
-          <p className="sm:text-xl text-center sm:text-left">Personalized web solutions for your business involve creating unique websites and web applications that perfectly align with your business needs and goals. We take into account your individual requirements and provide solutions that will help you achieve success in the online space.</p>
-          <div className="flex gap-[30px] w-full justify-center md:justify-start">
+          <motion.h1
+          initial={{ opacity: 0, x: -70 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+            className="text-2xl text-center sm:text-left md:text-3xl lg:text-6xl">Personalized web solutions for your business</motion.h1>
+          <motion.p 
+          initial={{ opacity: 0, x: -70 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="sm:text-xl text-center sm:text-left">Personalized web solutions for your business involve creating unique websites and web applications that perfectly align with your business needs and goals. We take into account your individual requirements and provide solutions that will help you achieve success in the online space.</motion.p>
+          <motion.div 
+          initial={{ opacity: 0, y: 70 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+          className="flex gap-[30px] w-full justify-center md:justify-start">
             <a href="#portfolio" className="bg-black rounded-2xl p-2 w-[150px] h-[40px] text-white flex items-center justify-center cursor-pointer">Portfolio</a>
             <a href="/frontend-cv.pdf" download="cv-fe.pdf" className="bg-black rounded-2xl p-2 w-[150px] h-[40px] text-white flex items-center justify-center cursor-pointer">CV <Image className="h-[30px] w-[30px]" width={100} height={100} alt="download" src="/arcticons.png" /></a>
-          </div>
+          </motion.div>
         </div>
-        <div className="flex justify-center items-center">
+        <motion.div 
+        initial={{ opacity: 0, x: 70 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className="flex justify-center items-center">
           <Image src="/selfiNew.jpg" alt="hero" width={500} height={500} className="xl:w-[500px] xl:h-[500px] rounded-full w-[150px] h-[150px] md:w-[250px] md:h-[250px] lg:w-[350px] lg:h-[350px]" />
-        </div>
+        </motion.div>
       </div>
     </header>
   )

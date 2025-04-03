@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type PortfolioItem = {
   id: number;
@@ -61,9 +62,12 @@ export default function Portfolio() {
   return (
     <div id="portfolio" className="flex flex-col justify-around w-screen p-[3%] min-h-[100vh]">
       <div className="flex flex-wrap gap-5 justify-center">
-        {editPortfolio.map((item) => (
-          <div
+        {editPortfolio.map((item, index) => (
+          <motion.div
             key={item.id}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{delay: index * 0.4, duration: 1 }}
             className="w-[650px] shadow-lg p-5 flex flex-col gap-3 items-center justify-center bg-white rounded-lg"
           >
             <div className="flex flex-col md:flex-row gap-2 items-center">
@@ -83,7 +87,7 @@ export default function Portfolio() {
                 Visit
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       {visible < portfolio.length && (<div className="self-center">
