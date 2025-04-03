@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { div } from "framer-motion/client";
 
 type PortfolioItem = {
   id: number;
