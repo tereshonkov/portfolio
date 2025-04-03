@@ -47,7 +47,7 @@ const portfolio: PortfolioItem[] = [
     alt: "JavaScript project",
     description:
       "In this project, the best practices of vanilla JavaScript were applied. The implementation showcases how cards can be displayed and filtered based on various props, demonstrating flexibility and efficiency in handling data without relying on external libraries.",
-    link: "https://tereshonkov.github.io/step-js/",
+    link: "https://tereshonkov.github.io/tereshonkov.github.step-js/",
   },
 ];
 
