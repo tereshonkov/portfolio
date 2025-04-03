@@ -19,7 +19,7 @@ export default function Header2() {
         <div className="flex flex-col-reverse sm:flex-row sm:justify-around sm:items-center p-10 grow-1">
           <div className="flex flex-col gap-[30px] sm:w-[360px] lg:w-[460px]">
             <h1 className="text-2xl text-center sm:text-left md:text-3xl lg:text-6xl">Personalized web solutions for your business</h1>
-            <p className="sm:text-xl text-center sm:text-left">Personalized web solutions for your business involve creating unique websites and web applications that perfectly align with your business's needs and goals. We take into account your individual requirements and provide solutions that will help you achieve success in the online space.</p>
+            <p className="sm:text-xl text-center sm:text-left">Personalized web solutions for your business involve creating unique websites and web applications that perfectly align with your business needs and goals. We take into account your individual requirements and provide solutions that will help you achieve success in the online space.</p>
             <div className="flex gap-[30px] w-full justify-center md:justify-start">
               <a href="#portfolio" className="bg-black rounded-2xl p-2 w-[150px] text-white flex items-center justify-center cursor-pointer">Portfolio</a>
               <a href="/frontend-cv.pdf" download="cv-fe.pdf" className="bg-black rounded-2xl p-2 w-[150px] text-white flex items-center justify-center cursor-pointer">CV <Image width={100} height={100} alt="download" src="/arcticons.png"/></a>
