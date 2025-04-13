@@ -50,6 +50,24 @@ const portfolio: PortfolioItem[] = [
       "In this project, the best practices of vanilla JavaScript were applied. The implementation showcases how cards can be displayed and filtered based on various props, demonstrating flexibility and efficiency in handling data without relying on external libraries.",
     link: "https://tereshonkov.github.io/tereshonkov.github.step-js/",
   },
+  {
+    id: 5,
+    img1: "/fitnes-decstop.jpg",
+    alt: "Fitness project",
+    img2: "/fitnes-mobile.png",
+    alt2: "mobile view",
+    description: "This project was built using Next.js, Tailwind CSS, and Framer Motion. Stack includes Next.js, Tailwind CSS, and Framer Motion. The project features a responsive design with smooth animations and transitions.",
+    link: "https://gym-app-eight-kappa.vercel.app/",
+  },
+  {
+    id: 6,
+    img1: "/auto-decstop.png",
+    alt: "Auto project",
+    img2: "/auto-mobile.png",
+    alt2: "mobile view",
+    description: "This project involved converting a Figma design to HTML/CSS and implementing JavaScript functionality for the mobile version. Stack includes HTML, CSS, and JavaScript. The project features a responsive design with smooth animations and transitions.",
+    link: "https://gym-app-eight-kappa.vercel.app/",
+  },
 ];
 
 export default function Portfolio() {
